@@ -34,7 +34,7 @@ setup-dev: ## install python project dependencies for development
 	## install nodejs / npm
 	nodeenv -p
 	npm i -g npm
-	npm --prefix zeprofile_project/backend_ui/ install
+	npm --prefix furetui_vue/ install
 
 run-dev: ## launch pyramid development server
 	anyblok_pyramid -c app.dev.cfg --wsgi-host 0.0.0.0
@@ -65,9 +65,9 @@ documentation: ## generate documentation
 	make -C doc/ html
 
 run-dev-npm: ## launch npm development server with hot reload
-	npm --prefix anyblok_furetui/vue-furetui/ update
-	npm --prefix anyblok_furetui/vue-furetui/ run serve
+	npm --prefix furetui_vue/ update
+	npm --prefix furetui_vue/ run serve
 
 build-assets: ## build js and scss assets for production
-	npm --prefix anyblok_furetui/vue-furetui/ update
-	npm --prefix anyblok_furetui/vue-furetui/ run build
+	npm --prefix furetui_vue/ update
+	npm --prefix furetui_vue/ run build

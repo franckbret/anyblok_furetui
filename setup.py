@@ -63,7 +63,7 @@ setup(
     ],
     entry_points={
         'bloks': [
-            'furetui=anyblok_furetui.furetui:FuretUIBlok',
+            'furetui=anyblok_furetui.furetui_api:FuretUIApiBlok',
         ],
     },
     extras_require={},

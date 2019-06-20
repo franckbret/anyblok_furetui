@@ -7,3 +7,4 @@ ipdb
 ipdbplugin
 ipython
 pysqlite3
+nodeenv

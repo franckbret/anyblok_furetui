@@ -1,11 +1,18 @@
 @charset "utf-8";
 @import "~bulma/sass/utilities/_all";
 
-$primary: #0075a2;
+$primary: #1b90be;
+$secondary: #68cce2;
+$tertiary: #ff502f;
+
 $primary-invert: findColorInvert($primary);
+$secondary-invert: findColorInvert($secondary);
+$tertiary-invert: findColorInvert($tertiary);
 
 $colors: (
   "primary": ($primary, $primary-invert),
+  "secondary": ($secondary, $secondary-invert),
+  "tertiary": ($tertiary, $tertiary-invert),
 );
 
 @import "~bulma";

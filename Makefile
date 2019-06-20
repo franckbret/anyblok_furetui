@@ -66,8 +66,10 @@ documentation: ## generate documentation
 
 run-dev-npm: ## launch npm development server with hot reload
 	npm --prefix furetui_vue/ update
-	npm --prefix furetui_vue/ run serve
+	npm --prefix furetui_vue/ run dev
 
 build-assets: ## build js and scss assets for production
 	npm --prefix furetui_vue/ update
 	npm --prefix furetui_vue/ run build
+	cp -rf furetui_vue/dist/furet-ui anyblok_furetui/furetui_api/static
+	cp -f furetui_vue/dist/index.html anyblok_furetui/furetui_api/static/index.html
